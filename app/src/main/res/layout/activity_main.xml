@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context="com.example.mitchell.myapplication.FacultyActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:textSize="36sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Mission"/>
+
+    <TextView
+        android:id="@+id/Mission"
+        android:layout_below="@id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/missonStatement"/>
+
+    <TextView
+        android:id="@+id/TitleCommonCourses"
+        android:layout_below="@id/Mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text= "Common Courses"/>
+
+    <TextView
+        android:id="@+id/CommonCourses"
+        android:layout_below="@id/TitleCommonCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/CommonCourses"/>
+
+    <TextView
+        android:id="@+id/TitleDifferences"
+        android:layout_below="@id/CommonCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text= "CS/CIS Differences"/>
+
+    <TextView
+        android:id="@+id/Differences"
+        android:layout_below="@id/TitleDifferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/Differences"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mission"
+        android:layout_below="@id/Differences"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:id="@+id/Faculty"
+        android:layout_below="@+id/imageView"
+        android:onClick="onClickFaculty"
+        android:layout_toRightOf="@+id/Course"
+        android:layout_toEndOf="@+id/Course"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Sequence"
+        android:id="@+id/Course"
+        android:onClick="onClickCourse"
+        android:layout_below="@+id/imageView"
+         />
+
+
+
+</RelativeLayout>

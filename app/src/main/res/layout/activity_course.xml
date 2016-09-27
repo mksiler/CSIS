@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="16dp"
+    android:columnCount="3"
+    tools:context="com.example.mitchell.myapplication.CourseActivity">
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="Semester"
+        android:layout_height="25dp"
+        android:layout_width="65dp" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="CS"
+        android:layout_width="145dp" />
+    <TextView
+        android:layout_column="2"
+        android:layout_row="0"
+        android:text="CIS"
+        />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="Year 1 \nFall" />
+    <TextView
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="@string/Fall1CS"
+        />
+    <TextView
+        android:layout_column="2"
+        android:layout_row="1"
+        android:text="@string/Fall1CIS"
+        />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="Year 1 \nWinter"
+        />
+    <TextView
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="@string/Winter1CS"
+        />
+    <TextView
+        android:layout_column="2"
+        android:layout_row="2"
+        android:text="@string/Winter1CIS"
+        />
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="onClickBack"
+        />
+
+</GridLayout>
